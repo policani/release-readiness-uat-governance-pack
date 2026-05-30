@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Package Test Results - Release Readiness and UAT Governance Pack</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.55;color:#1f2933;max-width:1100px;margin:40px auto;padding:0 24px}
+h1{color:#102a43;border-bottom:4px solid #2f80ed;padding-bottom:10px}
+h2{color:#243b53;margin-top:28px}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+th,td{border:1px solid #bcccdc;padding:9px;text-align:left;vertical-align:top}
+th{background:#f0f4f8}
+.pass{color:#0b6b3a;font-weight:bold}
+.note{background:#f7fafc;border-left:5px solid #2f80ed;padding:12px 16px}
+</style>
+</head>
+<body>
+<h1>Package Test Results</h1>
+<p><strong>Package:</strong> release-readiness-uat-governance-pack</p>
+<p><strong>Generated:</strong> 2026-05-29 20:44:34</p>
+
+<h2>Validation summary</h2>
+<table>
+<tr><th>Check</th><th>Result</th><th>Evidence</th></tr>
+<tr><td>README exists and is clear</td><td class="pass">Pass</td><td>README.md exists with operating problem, usage, lifecycle fit, workflow, runtime constraints, outputs, and keywords.</td></tr>
+<tr><td>AGENTS.md exists and is under 8,000 characters</td><td class="pass">Pass</td><td>AGENTS.md character count: 7949.</td></tr>
+<tr><td>chatgpt-project/ exists</td><td class="pass">Pass</td><td>Runtime folder exists.</td></tr>
+<tr><td>chatgpt-project/ is flat</td><td class="pass">Pass</td><td>No nested runtime folders found.</td></tr>
+<tr><td>chatgpt-project/ has 25 files or fewer</td><td class="pass">Pass</td><td>Runtime file count: 14.</td></tr>
+<tr><td>Runtime files are non-duplicative</td><td class="pass">Pass</td><td>No identical runtime file bodies detected; each file has distinct operating purpose.</td></tr>
+<tr><td>Install instructions are clear</td><td class="pass">Pass</td><td>README instructs users to upload only chatgpt-project/ into ChatGPT and describes full-repo use for Codex/local work.</td></tr>
+<tr><td>Configuration is absent or single-file only</td><td class="pass">Pass</td><td>No configuration is required; no configuration folder or scattered settings files exist.</td></tr>
+<tr><td>HTML config builder exists if configuration is required</td><td class="pass">Pass</td><td>Not applicable; no configuration is required.</td></tr>
+<tr><td>Sample data, prompts, and outputs exist</td><td class="pass">Pass</td><td>examples/sample-data.html, examples/sample-prompts.html, and examples/sample-output.html exist.</td></tr>
+<tr><td>Mermaid source exists and diagram is embedded in README</td><td class="pass">Pass</td><td>workflow/workflow.mmd exists and README.md includes an embedded Mermaid diagram.</td></tr>
+<tr><td>Human-read-only files use .html except allowed Markdown exceptions</td><td class="pass">Pass</td><td>Allowed Markdown files are README.md, AGENTS.md, LICENSE.md, and runtime .md files inside chatgpt-project/. Mermaid source is .mmd.</td></tr>
+<tr><td>Package is public-safe</td><td class="pass">Pass</td><td>Examples use fictional systems, owners, defects, dates, and metrics.</td></tr>
+<tr><td>Human accountability is preserved</td><td class="pass">Pass</td><td>Runtime and README prohibit autonomous approval, release, defect acceptance, risk acceptance, system changes, and stakeholder notification.</td></tr>
+<tr><td>Zip opens and preserves folder structure</td><td class="pass">Pass</td><td>Archive extracted successfully; root folder and runtime folder preserved: True.</td></tr>
+</table>
+
+<h2>Package metrics</h2>
+<table>
+<tr><th>Metric</th><th>Value</th></tr>
+<tr><td>Total file count before zip</td><td>24</td></tr>
+<tr><td>Runtime file count</td><td>14</td></tr>
+<tr><td>AGENTS.md character count</td><td>7949</td></tr>
+<tr><td>Runtime cap</td><td>25 files</td></tr>
+<tr><td>Required configuration</td><td>None</td></tr>
+</table>
+
+<h2>Non-overlap review</h2>
+<table>
+<tr><th>Overlap question</th><th>Result</th></tr>
+<tr><td>Does this repeat the Business Case System?</td><td>No. It uses approved/planned intent and does not justify investment.</td></tr>
+<tr><td>Does this repeat the Project Charter Initiation Agent?</td><td>No. It receives charter/planning handoff and does not authorize or define the project.</td></tr>
+<tr><td>Does this repeat Portfolio Prioritization Scoring Agent?</td><td>No. It assesses UAT/launch readiness, not funding, prioritization, or sequencing.</td></tr>
+<tr><td>Does this repeat Executive Portfolio Review Pack Builder?</td><td>No. It creates launch readiness evidence and decision handoff, not the full executive portfolio pack.</td></tr>
+<tr><td>Does this repeat PMO Governance Operations Log?</td><td>No. It sends blockers/actions/decisions to the log but does not operate the ongoing governance log.</td></tr>
+<tr><td>Does this repeat Value Realization Governance Ledger?</td><td>No. It sends post-launch value assumptions and risks but does not track realized benefits.</td></tr>
+</table>
+
+<div class="note">
+<p><strong>Conclusion:</strong> Package passes the repository, runtime, public-safety, human-control, non-overlap, and documentation checks for the requested MVP.</p>
+</div>
+</body>
+</html>

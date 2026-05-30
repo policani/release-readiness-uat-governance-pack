@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Sample Data - Release Readiness and UAT Governance Pack</title><style>
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.55;color:#1f2933;max-width:1060px;margin:40px auto;padding:0 24px}
+h1{color:#102a43;border-bottom:4px solid #2f80ed;padding-bottom:10px}
+h2{color:#243b53;margin-top:28px}
+h3{color:#334e68;margin-top:20px}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+th,td{border:1px solid #bcccdc;padding:9px;text-align:left;vertical-align:top}
+th{background:#f0f4f8}
+code,pre{background:#f7fafc;border:1px solid #d9e2ec;border-radius:6px}
+pre{padding:14px;white-space:pre-wrap}
+.badge{display:inline-block;padding:3px 8px;border-radius:999px;background:#e6f4ff;color:#0b4f71;font-weight:bold;font-size:12px}
+.warn{background:#fff8e6;border-left:5px solid #f0b429;padding:12px 16px}
+.danger{background:#fff5f5;border-left:5px solid #d64545;padding:12px 16px}
+.good{background:#f0fff4;border-left:5px solid #2f855a;padding:12px 16px}
+</style></head>
+<body>
+<h1>Sample Data</h1>
+<p><span class="badge">Synthetic scenario</span></p>
+<p>This sample uses fictional data for a finance-impacting system release with four workstreams, incomplete test cases, constrained SMEs, unresolved defects, and a fixed launch date.</p>
+
+<h2>Release profile</h2>
+<table>
+<tr><th>Field</th><th>Dummy value</th></tr>
+<tr><td>Release name</td><td>Revenue Close Automation Release 2.1</td></tr>
+<tr><td>Business purpose</td><td>Automate selected month-end revenue close adjustments and reduce manual journal preparation effort.</td></tr>
+<tr><td>Impacted system</td><td>Fictional FinanceHub platform and downstream General Ledger interface.</td></tr>
+<tr><td>Target UAT start</td><td>2026-07-06</td></tr>
+<tr><td>Target launch</td><td>2026-07-31</td></tr>
+<tr><td>Fixed-date driver</td><td>Quarterly reporting calendar and vendor support window.</td></tr>
+<tr><td>Sponsor</td><td>VP Finance Operations</td></tr>
+<tr><td>Release owner</td><td>Program Manager, Finance Systems</td></tr>
+<tr><td>QA owner</td><td>QA Lead, Enterprise Applications</td></tr>
+<tr><td>Business owner</td><td>Director, Revenue Accounting</td></tr>
+</table>
+
+<h2>Workstreams</h2>
+<table>
+<tr><th>Workstream</th><th>Owner</th><th>Status</th><th>Current issue</th></tr>
+<tr><td>Revenue rules configuration</td><td>Finance Systems Lead</td><td>Yellow</td><td>Two rule scenarios still awaiting business confirmation.</td></tr>
+<tr><td>General Ledger integration</td><td>Integration Lead</td><td>Red</td><td>Batch validation failed twice in test environment.</td></tr>
+<tr><td>UAT business validation</td><td>UAT Coordinator</td><td>Yellow</td><td>Only 18 of 32 test cases drafted; SME availability limited.</td></tr>
+<tr><td>Support and runbook readiness</td><td>Operations Lead</td><td>Yellow</td><td>Runbook draft exists but escalation path is incomplete.</td></tr>
+</table>
+
+<h2>Test and defect data</h2>
+<table>
+<tr><th>Area</th><th>Dummy detail</th></tr>
+<tr><td>Test cases planned</td><td>32</td></tr>
+<tr><td>Test cases drafted</td><td>18</td></tr>
+<tr><td>Critical business paths traced</td><td>5 of 9</td></tr>
+<tr><td>Known defects</td><td>7 open defects: 1 Severity 1, 2 Severity 2, 4 Severity 3.</td></tr>
+<tr><td>Top defect</td><td>DEF-1042 - GL batch export intermittently drops adjustment reference ID in test environment.</td></tr>
+<tr><td>Workaround</td><td>Manual correction possible but not accepted by Finance for launch.</td></tr>
+<tr><td>SME availability</td><td>Revenue Accounting has two SMEs available only 6 hours per week during UAT window.</td></tr>
+</table>
+
+<h2>Environment and data notes</h2>
+<table>
+<tr><th>Dependency</th><th>Status</th><th>Concern</th></tr>
+<tr><td>UAT environment access</td><td>Mostly ready</td><td>Three business validators pending access approval.</td></tr>
+<tr><td>Test data refresh</td><td>Not ready</td><td>Latest data refresh delayed; revenue adjustments sample incomplete.</td></tr>
+<tr><td>GL interface</td><td>Not ready</td><td>Batch failures unresolved; downstream validation evidence missing.</td></tr>
+<tr><td>Support runbook</td><td>Partially ready</td><td>Support escalation path missing after-hours owner.</td></tr>
+</table>
+
+<h2>Signoff context</h2>
+<table>
+<tr><th>Area</th><th>Owner</th><th>Status</th></tr>
+<tr><td>Business validation</td><td>Director, Revenue Accounting</td><td>Pending</td></tr>
+<tr><td>QA evidence</td><td>QA Lead</td><td>Pending</td></tr>
+<tr><td>Technology readiness</td><td>Application Owner</td><td>Pending defect remediation</td></tr>
+<tr><td>Finance/accounting control</td><td>Controller delegate</td><td>Not yet reviewed</td></tr>
+<tr><td>Operations support</td><td>Operations Lead</td><td>Pending runbook update</td></tr>
+<tr><td>Sponsor launch decision</td><td>VP Finance Operations</td><td>Pending readiness brief</td></tr>
+</table>
+</body>
+</html>

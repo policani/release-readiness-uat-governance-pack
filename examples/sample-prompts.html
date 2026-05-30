@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Sample Prompts - Release Readiness and UAT Governance Pack</title><style>
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.55;color:#1f2933;max-width:1060px;margin:40px auto;padding:0 24px}
+h1{color:#102a43;border-bottom:4px solid #2f80ed;padding-bottom:10px}
+h2{color:#243b53;margin-top:28px}
+h3{color:#334e68;margin-top:20px}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+th,td{border:1px solid #bcccdc;padding:9px;text-align:left;vertical-align:top}
+th{background:#f0f4f8}
+code,pre{background:#f7fafc;border:1px solid #d9e2ec;border-radius:6px}
+pre{padding:14px;white-space:pre-wrap}
+.badge{display:inline-block;padding:3px 8px;border-radius:999px;background:#e6f4ff;color:#0b4f71;font-weight:bold;font-size:12px}
+.warn{background:#fff8e6;border-left:5px solid #f0b429;padding:12px 16px}
+.danger{background:#fff5f5;border-left:5px solid #d64545;padding:12px 16px}
+.good{background:#f0fff4;border-left:5px solid #2f855a;padding:12px 16px}
+</style></head>
+<body>
+<h1>Sample Prompts</h1>
+<p><span class="badge">Synthetic prompt set</span></p>
+<p>Use these prompts after uploading only the contents of <code>chatgpt-project/</code> into a ChatGPT Project.</p>
+
+<h2>1. Start readiness intake</h2>
+<pre><code>Start a readiness review for a finance-impacting system release. Use the intake file first. Extract known facts, identify material gaps, and ask no more than 10 questions grouped by scope/date, evidence, environment/data, defects, and signoff.
+
+Scenario:
+[Paste release profile, workstreams, test status, defects, environment notes, and signoff context.]</code></pre>
+
+<h2>2. Build UAT entry and exit criteria</h2>
+<pre><code>Using the confirmed release context, draft UAT entry and exit criteria. Make each criterion observable, evidence-based, and tied to an accountable owner or signoff area. Separate must-have criteria from launch-condition candidates.</code></pre>
+
+<h2>3. Review evidence readiness</h2>
+<pre><code>Review this test and defect evidence. Score evidence readiness 0-3 by dimension, identify weak or missing evidence, and list the minimum proof needed before UAT exit or launch decision review.</code></pre>
+
+<h2>4. Review environment and data readiness</h2>
+<pre><code>Assess environment, access, integration, batch, and data readiness. Separate blockers from material risks and action items. Produce an escalation-ready table with owner, due date, gate impact, and decision needed.</code></pre>
+
+<h2>5. Build signoff matrix</h2>
+<pre><code>Create the signoff matrix for this release. Include business, QA, technology, environment/data, operations/support, finance/accounting, and sponsor decision ownership. Flag where approval is implied, missing, informal, or unsupported.</code></pre>
+
+<h2>6. Prepare launch decision brief</h2>
+<pre><code>Build a launch decision brief for sponsor review. Include readiness scores, blockers, launch conditions, risks of proceeding, risks of holding, human decisions required, and downstream handoffs to the executive portfolio review, PMO governance log, and value realization ledger.</code></pre>
+
+<h2>7. Quality review</h2>
+<pre><code>Review this readiness pack for weaknesses. Flag missing evidence, overclaiming, vague ownership, hidden decision rights, unsupported recommendations, and any language that sounds like the AI is approving launch.</code></pre>
+</body>
+</html>

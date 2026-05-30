@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Sample Output - UAT Readiness Pack</title><style>
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.55;color:#1f2933;max-width:1060px;margin:40px auto;padding:0 24px}
+h1{color:#102a43;border-bottom:4px solid #2f80ed;padding-bottom:10px}
+h2{color:#243b53;margin-top:28px}
+h3{color:#334e68;margin-top:20px}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+th,td{border:1px solid #bcccdc;padding:9px;text-align:left;vertical-align:top}
+th{background:#f0f4f8}
+code,pre{background:#f7fafc;border:1px solid #d9e2ec;border-radius:6px}
+pre{padding:14px;white-space:pre-wrap}
+.badge{display:inline-block;padding:3px 8px;border-radius:999px;background:#e6f4ff;color:#0b4f71;font-weight:bold;font-size:12px}
+.warn{background:#fff8e6;border-left:5px solid #f0b429;padding:12px 16px}
+.danger{background:#fff5f5;border-left:5px solid #d64545;padding:12px 16px}
+.good{background:#f0fff4;border-left:5px solid #2f855a;padding:12px 16px}
+</style></head>
+<body>
+<h1>Sample Output: UAT Readiness Pack</h1>
+<p><span class="badge">Synthetic output</span></p>
+
+<h2>Executive readiness summary</h2>
+<div class="danger">
+<p><strong>Recommendation for human review:</strong> Hold UAT entry until the GL batch defect, test data refresh, critical test-case coverage, and signoff ownership gaps are resolved or explicitly accepted by accountable human owners.</p>
+</div>
+<p>The release has a fixed target launch date, but current evidence does not support credible UAT entry. The highest-risk issue is the unresolved GL batch export defect that affects downstream finance validation. UAT test preparation is incomplete, SME availability is constrained, and finance/accounting control review has not started.</p>
+
+<h2>Readiness scorecard</h2>
+<table>
+<tr><th>Dimension</th><th>Score</th><th>Status</th><th>Evidence</th><th>Concern</th></tr>
+<tr><td>Scope stability</td><td>2</td><td>Ready with conditions</td><td>Release scope and four workstreams identified.</td><td>Two revenue-rule scenarios await business confirmation.</td></tr>
+<tr><td>UAT entry criteria</td><td>1</td><td>Weak</td><td>Draft criteria implied but not approved.</td><td>No agreed entry gate with named signoff owner.</td></tr>
+<tr><td>Test coverage</td><td>1</td><td>Weak</td><td>18 of 32 test cases drafted; 5 of 9 critical paths traced.</td><td>Critical coverage incomplete before planned UAT start.</td></tr>
+<tr><td>Evidence quality</td><td>1</td><td>Weak</td><td>Partial test inventory and defect summary available.</td><td>No executed evidence yet; traceability incomplete.</td></tr>
+<tr><td>Defect/blocker status</td><td>0</td><td>Blocked</td><td>7 open defects, including one Severity 1.</td><td>GL export defect lacks accepted workaround.</td></tr>
+<tr><td>Environment/data readiness</td><td>0</td><td>Blocked</td><td>Environment access partial; refresh delayed.</td><td>Test data incomplete and GL interface unstable.</td></tr>
+<tr><td>SME readiness</td><td>1</td><td>Weak</td><td>Two SMEs available six hours per week.</td><td>Availability may not support compressed UAT window.</td></tr>
+<tr><td>Signoff ownership</td><td>1</td><td>Weak</td><td>Candidate owners identified.</td><td>Finance/accounting and sponsor signoff path not confirmed.</td></tr>
+</table>
+
+<h2>Gate assessment</h2>
+<table>
+<tr><th>Gate</th><th>Assessment</th><th>Reason</th></tr>
+<tr><td>UAT entry</td><td>Not ready</td><td>Blockers exist in GL interface, test data, and test coverage.</td></tr>
+<tr><td>Launch decision</td><td>Insufficient evidence</td><td>No executed UAT evidence, incomplete traceability, and pending signoffs.</td></tr>
+</table>
+
+<h2>Blocker and escalation list</h2>
+<table>
+<tr><th>Item</th><th>Classification</th><th>Impact</th><th>Owner</th><th>Due date</th><th>Decision needed</th></tr>
+<tr><td>DEF-1042 GL batch export drops adjustment reference ID</td><td>Blocker</td><td>Prevents reliable finance validation and launch confidence.</td><td>Integration Lead</td><td>Before UAT entry</td><td>Fix before UAT or obtain explicit finance and sponsor decision on deferral.</td></tr>
+<tr><td>Test data refresh delayed</td><td>Blocker</td><td>Prevents realistic validation of revenue adjustment scenarios.</td><td>Data Owner</td><td>Before UAT entry</td><td>Confirm refresh date and completeness criteria.</td></tr>
+<tr><td>Only 18 of 32 test cases drafted</td><td>Material risk</td><td>Critical paths may be untested during compressed window.</td><td>QA Lead</td><td>Before UAT entry</td><td>Confirm minimum viable coverage for UAT entry.</td></tr>
+<tr><td>Finance/accounting signoff path not reviewed</td><td>Decision needed</td><td>Finance-impacting release lacks control acceptance path.</td><td>Controller delegate</td><td>Before UAT exit</td><td>Confirm required evidence and signoff authority.</td></tr>
+</table>
+
+<h2>Signoff matrix</h2>
+<table>
+<tr><th>Area</th><th>Owner</th><th>Status</th><th>Decision still required</th></tr>
+<tr><td>Business validation</td><td>Director, Revenue Accounting</td><td>Pending</td><td>Accept UAT outcome after evidence review.</td></tr>
+<tr><td>QA evidence</td><td>QA Lead</td><td>Pending</td><td>Confirm coverage, execution, and defect position.</td></tr>
+<tr><td>Technology readiness</td><td>Application Owner</td><td>Blocked</td><td>Confirm remediation of GL defect or escalate decision.</td></tr>
+<tr><td>Environment/data</td><td>Data Owner and Environment Lead</td><td>Blocked</td><td>Confirm refresh and interface stability.</td></tr>
+<tr><td>Operations/support</td><td>Operations Lead</td><td>Pending</td><td>Confirm runbook and after-hours escalation owner.</td></tr>
+<tr><td>Finance/accounting</td><td>Controller delegate</td><td>Not started</td><td>Confirm finance validation evidence and control signoff needs.</td></tr>
+<tr><td>Sponsor</td><td>VP Finance Operations</td><td>Pending</td><td>Decide whether to hold, proceed with conditions, or adjust launch date.</td></tr>
+</table>
+
+<h2>Launch decision brief</h2>
+<div class="warn">
+<p><strong>Decision required:</strong> Hold UAT entry, proceed with conditions, or escalate launch-date tradeoff to sponsor review.</p>
+</div>
+<p><strong>Recommendation for accountable owner consideration:</strong> Hold UAT entry until the GL batch defect is remediated, test data refresh is complete, minimum test coverage is confirmed, and finance/accounting signoff requirements are known.</p>
+
+<h3>Risks of proceeding</h3>
+<ul>
+<li>Finance validation may produce unreliable results due to GL interface instability.</li>
+<li>Compressed UAT window may miss critical business paths.</li>
+<li>SME constraints may push unresolved scenarios into launch readiness review.</li>
+<li>Finance/accounting signoff may surface late control requirements.</li>
+</ul>
+
+<h3>Risks of holding</h3>
+<ul>
+<li>Fixed vendor support window may need renegotiation.</li>
+<li>Quarterly reporting timeline may lose planned automation benefit.</li>
+<li>Downstream release train may need sequencing adjustment.</li>
+</ul>
+
+<h2>Human decisions required</h2>
+<table>
+<tr><th>Decision</th><th>Owner</th><th>Timing</th></tr>
+<tr><td>Whether UAT can start without resolved GL defect</td><td>VP Finance Operations with Controller delegate</td><td>Before UAT start</td></tr>
+<tr><td>Minimum viable UAT coverage for entry</td><td>QA Lead and Director, Revenue Accounting</td><td>Before UAT start</td></tr>
+<tr><td>Whether launch date remains fixed</td><td>Sponsor</td><td>After blocker review</td></tr>
+</table>
+
+<h2>Downstream handoff</h2>
+<table>
+<tr><th>Destination</th><th>Send</th></tr>
+<tr><td>Executive Portfolio Review Pack Builder</td><td>Launch-date tradeoff, fixed-date risk, sponsor decision request, conditional launch risk.</td></tr>
+<tr><td>PMO Governance Operations Log</td><td>DEF-1042, data refresh action, test coverage action, finance signoff action, owners, due dates.</td></tr>
+<tr><td>Value Realization Governance Ledger</td><td>Post-launch automation benefit risk, baseline/target follow-up, first value check after month-end close.</td></tr>
+</table>
+</body>
+</html>

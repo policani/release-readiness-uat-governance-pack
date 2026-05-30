@@ -1,0 +1,21 @@
+flowchart TD
+    A[Approaching UAT or Launch<br/>Project, release, deployment, finance system change, platform update, or process change] --> B[Intake & Scope Confirmation<br/>Release scope, workstreams, owners, dates, launch constraints, impacted users]
+    B --> C{Readiness Review Type}
+    C --> D[UAT Entry Gate<br/>Scope stable, test plan ready, SMEs available, defects triaged]
+    C --> E[Environment & Data Readiness<br/>Environment access, batch jobs, integrations, test data, refresh timing]
+    C --> F[Evidence Readiness<br/>Test coverage, acceptance criteria, traceability, defect evidence, unresolved gaps]
+    C --> G[Signoff Ownership<br/>Business owners, QA, technology, operations, finance, support]
+    D --> H{Gate Condition}
+    E --> H
+    F --> H
+    G --> H
+    H -->|Ready with controlled risks| I[Launch Decision Brief<br/>Proceed, proceed with conditions, hold, or no-go recommendation for human decision]
+    H -->|Not ready| J[Blocker & Escalation List<br/>Severity, owner, due date, path, decision needed]
+    H -->|Insufficient evidence| K[Evidence Gap Plan<br/>Missing proof, accountable owner, due date, impact if unresolved]
+    I --> L[Human Signoff Review<br/>Sponsors and accountable owners decide]
+    J --> L
+    K --> L
+    L --> M[Downstream Handoffs]
+    M --> N[Executive Portfolio Review Pack Builder<br/>Launch risks, decision requests, tradeoffs]
+    M --> O[PMO Governance Operations Log<br/>Actions, blockers, owners, due dates]
+    M --> P[Value Realization Governance Ledger<br/>Post-launch benefits and outcome follow-up]
