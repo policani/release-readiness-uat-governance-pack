@@ -2,6 +2,18 @@
 
 A human-governed ChatGPT Project package for assessing UAT readiness, launch evidence, blocker escalation, signoff ownership, and release decision support before business validation or production launch.
 
+## Portfolio exhibit
+
+| Review question | Where to look |
+|---|---|
+| Status | Public portfolio prototype for delivery-readiness, UAT, launch-gate, and signoff-governance review. |
+| Best evaluator | PMO, program, release, QA, business validation, finance systems, revenue technology, operations, and sponsor-review leaders approaching UAT or launch. |
+| Operating decision supported | Does the work have enough build/test evidence, environment readiness, data readiness, defect triage, blocker ownership, and signoff clarity for a human readiness decision? |
+| Concrete example | [`examples/sample-output.html`](examples/sample-output.html) shows a synthetic readiness pack and launch decision brief. |
+| Before / after proof | Before: test evidence, blockers, signoffs, defects, environment status, and launch constraints are scattered. After: the work has a readiness state, evidence gaps, blocker list, signoff view, and launch decision framing for human review. |
+| Boundary | This pack supports readiness review. It does not execute tests, approve UAT, approve launch, accept defects, waive controls, or change environments. |
+| Portfolio lane | [Prove delivery readiness](https://policani.net/#navigator). |
+
 ## Operating problem
 
 Releases slip or create avoidable rework when business validation starts too late, UAT entry criteria are unclear, test evidence is weak, environments are unstable, data is not ready, unresolved defects are normalized, or signoff ownership is ambiguous.
@@ -33,7 +45,7 @@ This module helps a human leader:
 
 ## What it does not do
 
-This is not a QA execution system, test-management platform, release automation tool, deployment runbook, project approval workflow, or autonomous launch authority.
+This pack supports readiness review for human owners. It does not operate as a QA execution system, test-management platform, release automation tool, deployment runbook, project approval workflow, or autonomous launch authority.
 
 It does not:
 
