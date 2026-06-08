@@ -54,11 +54,19 @@ State plausible consequences based on evidence. Do not exaggerate.
 
 State operational, financial, stakeholder, sequencing, or commitment impacts if launch is held.
 
-### 9. Human decisions required
+### 9. Launch-to-value handoff
+
+| Expected outcome | Benefit type | Metric | Baseline | Target | Actual, if available | Measurement period | Source / source system | Measure owner | First value-check date | Review cadence | Launch-condition impact | Deferred-scope impact | Adoption readiness | Support readiness | Evidence gaps | Validation need | Confidence | Realization risk | Finance-sensitive flag | Downstream route |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|  |  |  |  |  |  |  |  |  |  |  | None / Low / Medium / High | None / Low / Medium / High | Ready / At risk / Unknown | Ready / At risk / Unknown |  |  | High / Medium / Low | High / Medium / Low | Yes / No / Unknown | Value Ledger / PMO Log / Executive Review |
+
+Flag whether launch conditions, deferred scope, adoption readiness, support readiness, defects, or data limitations may affect benefit realization. Do not treat launch or UAT exit as realized value.
+
+### 10. Human decisions required
 
 List each decision, decision owner, options, timing, and unresolved assumptions.
 
-### 10. Downstream handoffs
+### 11. Downstream handoffs
 
 Identify which items go to Executive Portfolio Review Pack Builder, PMO Governance Operations Log, and Value Realization Governance Ledger.
 

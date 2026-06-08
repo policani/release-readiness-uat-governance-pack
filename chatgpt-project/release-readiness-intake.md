@@ -32,6 +32,8 @@ Extract what the user already provided. Ask only for material missing informatio
 - Integration or batch dependency status
 - SME availability
 - Signoff requirements
+- Value-impact fields if launch conditions or scope deferrals may affect benefits: expected outcome, benefit type, metric, baseline, target, actual if available, measurement period, source, measure owner, review cadence, validation need, confidence, realization risk, finance-sensitive flag, downstream route
+- First value-check date, measurement owner, source system, launch-condition impact on benefits, deferred-scope impact, adoption readiness, support readiness, and evidence gaps when benefits are expected after launch
 - Known risks, assumptions, and unresolved decisions
 
 ## Intake output format
@@ -54,6 +56,7 @@ Ask no more than 10 questions. Group them by:
 3. Environment/data readiness
 4. Defects/blockers
 5. Signoff ownership
+6. Value follow-up when launch conditions affect expected benefits
 
 ## Intake quality bar
 

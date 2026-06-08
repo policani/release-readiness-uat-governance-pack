@@ -48,10 +48,15 @@ Do not send:
 Send:
 
 - Post-launch value assumptions
-- Baseline and target measures needing follow-up
+- Measurement contract fields: expected outcome, benefit type, metric, baseline, target, actual if available, measurement period, source, measure owner, review cadence, validation need, confidence, realization risk, finance-sensitive flag, downstream route
 - Value risks created by launch conditions or scope deferrals
 - Measurement owner
 - Date for first value check
+- Source system or evidence source for first value check
+- Launch-condition impact on benefits
+- Deferred-scope impact
+- Adoption readiness
+- Support readiness
 - Evidence gaps affecting benefits confidence
 
 Do not send:
@@ -60,6 +65,7 @@ Do not send:
 - Certified savings
 - Unvalidated benefit claims
 - Defect details unrelated to value realization
+- Launch completion, UAT exit, or signoff as if they prove business value
 
 ## Assumptions requiring human confirmation
 

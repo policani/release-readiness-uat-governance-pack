@@ -24,7 +24,7 @@ Create a signoff matrix for this release. Include business, QA, technology, envi
 
 ## Prepare launch decision brief
 
-Build a launch decision brief for sponsor review. Include readiness scores, blockers, launch conditions, risks of proceeding, risks of holding, decisions required, and downstream handoffs.
+Build a launch decision brief for sponsor review. Include readiness scores, blockers, launch conditions, risks of proceeding, risks of holding, decisions required, launch-to-value handoff, first value-check date, measurement owner, source system, adoption/support readiness, deferred-scope impact, evidence gaps, and downstream handoffs.
 
 ## Quality review
 
