@@ -226,6 +226,10 @@ The examples use fictional systems, teams, dates, defects, owners, and metrics. 
 
 This package supports structured thinking, synthesis, evidence review, drafting, and decision support. It keeps approval, release, defect acceptance, risk acceptance, funding, compliance, finance, legal, security, privacy, HR, and executive decisions with accountable humans.
 
+## License
+
+Source code and scripts are licensed under MIT. Documentation, prompts, templates, examples, and other non-code materials are licensed under CC BY 4.0 with attribution to Marco Policani. See `LICENSE.md`.
+
 ## Search keywords
 
 PMO, EPMO, UAT readiness, release readiness, launch readiness, go no-go, production readiness, validation readiness, business validation, finance systems release, project governance, program governance, release governance, QA governance, test evidence, test coverage, readiness gate, entry criteria, exit criteria, defect escalation, blocker escalation, environment readiness, data readiness, signoff matrix, launch decision brief, executive decision support, AI-assisted PMO, ChatGPT Project, human-in-the-loop governance.
